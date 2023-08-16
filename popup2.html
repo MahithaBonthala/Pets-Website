@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise Tips</title>
+	<style>
+		.popup__overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.popup__content {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			max-width: 800px;
+			width: 100%;
+			position: relative;
+			overflow-y: auto;
+			height: 400px; /* Adjust the height as needed */
+		}
+
+		.popup__title {
+			margin-top: 0;
+		}
+
+		.popup__list {
+			list-style: circle;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.popup__item {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-left: 20px;
+		}
+
+		.btn--close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		a {
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="popup__overlay">
+		<div class="popup__content">
+			<h2 class="popup__title">Exercise Tips</h2>
+			<ul class="popup__list">
+				<li class="popup__item">Provide daily exercise appropriate for your pet's breed, age, and health condition.</li>
+				<li class="popup__item">Engage in interactive play sessions with toys to keep your pet mentally stimulated.</li>
+				<li class="popup__item">Take your pet for regular walks or runs to maintain their physical fitness.</li>
+				<li class="popup__item">Consider activities like swimming or playing fetch to give your pet a full-body workout.</li>
+				<li class="popup__item">Provide opportunities for socialization with other pets or supervised playdates.</li>
+				<li class="popup__item">Use puzzle toys or treat-dispensing toys to keep your pet mentally engaged and physically active.</li>
+				<li class="popup__item">Monitor your pet's activity level and adjust the intensity and duration of exercise accordingly.</li>
+				<li class="popup__item">Consult with your veterinarian to determine the appropriate exercise routine for your pet.</li>
+			</ul>
+			<a class="btn--close" href="./bem.html">Close</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grooming Tips</title>
+	<style>
+		.popup__overlay {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.popup__content {
+			background-color: white;
+			padding: 20px;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+			max-width: 800px;
+			width: 100%;
+			position: relative;
+			overflow-y: auto;
+			height: 400px; /* Adjust the height as needed */
+		}
+
+		.popup__title {
+			margin-top: 0;
+		}
+
+		.popup__list {
+			list-style: circle;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.popup__item {
+			font-size: 18px;
+			line-height: 1.5;
+			margin-left: 20px;
+		}
+
+		.btn--close {
+			position: absolute;
+			top: 10px;
+			right: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px 20px;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+        a {
+            text-decoration: none;
+        }
+	</style>
+</head>
+<body>
+	<div class="popup__overlay">
+		<div class="popup__content">
+			<h2 class="popup__title">Feeding Tips</h2>
+			<ul class="popup__list">
+				<li class="popup__item">
+					<h1>Bathing:</h1>
+				</li>
+				<li class="popup__item">Use pet-friendly products: Choose a mild shampoo specifically formulated for pets. Human shampoos can be too harsh and may irritate their skin.</li>
+				<li class="popup__item">Prepare the bathing area: Before starting the bath, gather all the necessary supplies, such as towels, shampoo, and a non-slip mat. Ensure the water temperature is lukewarm, not too hot or cold.</li>
+				<li class="popup__item">Rinse thoroughly: Wet your pet's fur completely, and then apply the shampoo. Gently massage it into their coat, avoiding the eyes and ears. Rinse thoroughly to remove all the shampoo residue.</li>
+				<li class="popup__item">Dry properly: After the bath, use a towel to blot excess moisture from your pet's fur. If they tolerate it, you can also use a pet dryer on a low heat setting, keeping it at a safe distance to prevent overheating.</li>
+				<li class="popup__item">
+					<h1>Nail Trimming:</h1>
+				</li>
+				<li class="popup__item">Use proper nail clippers: Invest in a pair of pet nail clippers that are specifically designed for the size and type of your pet's nails. Scissor-style or guillotine-style clippers are commonly used.</li>
+				<li class="popup__item">Be cautious and gradual: Start by trimming a small portion of the nail, avoiding the quick (the sensitive part containing blood vessels). If your pet has dark nails and you can't see the quick, trim small amounts at a time to avoid accidentally cutting too far.</li>
+				<li class="popup__item">Take breaks if needed: If your pet becomes anxious or restless, take breaks during the nail trimming session. Offer treats and positive reinforcement to make the experience more pleasant.</li>
+				<li class="popup__item">Consider professional help if necessary: If you're uncomfortable or unsure about trimming your pet's nails, consult a professional groomer or your veterinarian. They can demonstrate the proper technique or handle the task for you.</li>
+				<li class="popup__item">Remember, grooming should be a positive experience for both you and your pet. Take it slowly, be patient, and rewardyour pet with treats and praise to create a bond of trust and make grooming a pleasant routine.</li>
+				
+			</ul>
+			<a class="btn--close" href="./bem.html">Close</a>
+		</div>
+	</div>
+</body>
+</html>

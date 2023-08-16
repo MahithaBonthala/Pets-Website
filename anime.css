@@ -1,0 +1,105 @@
+.dog-card {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 300px;
+}
+
+.dog-card h2 {
+  margin-top: 0;
+}
+
+.dog-card p {
+  margin-top: 5px;
+}
+
+.dog-image-container {
+  width: 300px;
+  height: 300px;
+  position: relative;
+}
+
+.dog-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: spin 2s linear 1;
+}
+
+.dog-image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: opacity 0.2s;
+}
+
+.dog-image-container:hover .dog-image-overlay {
+  opacity: 1;
+}
+
+.dog-image-overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.dog-image-container:hover .dog-image-overlay-text {
+  opacity: 1;
+}
+.loading-spinner {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.buy-now {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.buy-now:hover {
+  background-color: #3e8e41; /* Darker green */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+}
+
+.buy-now:active {
+  background-color: #3e8e41;
+  box-shadow: 0 6px 10px rgba(0,0,0,0.3);
+  transform: translateY(4px);
+}
+
+.buy-now[disabled] {
+  background-color: #ccc;
+  cursor: not-allowed;
+ } 
